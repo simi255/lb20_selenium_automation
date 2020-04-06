@@ -35,9 +35,10 @@ public class LoginTests {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		loginPOM = new LoginPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
-		screenShot = new ScreenShot(driver); 
+		System.out.println(baseUrl);
+	//	screenShot = new ScreenShot(driver); 
 		// open the browser 
-		driver.get(baseUrl);
+		//driver.get(baseUrl);
 	}
 	
 	@AfterMethod
@@ -50,6 +51,6 @@ public class LoginTests {
 		loginPOM.sendUserName("admin");
 		loginPOM.sendPassword("admin@123");
 		loginPOM.clickLoginBtn(); 
-		screenShot.captureScreenShot("First");
+		//screenShot.captureScreenShot("First");
 	}
 }
