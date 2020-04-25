@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.training.assignment2.tests.RTTC_040">
+      <class name="com.training.assignment3.tests.RTTC072">
         <methods>
-          <include name="setUp"/>
           <include name="setUpBeforeClass"/>
-          <include name="deleteCategories"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="addMultipleProducts" invocation-numbers="0 1 2 3"/>
         </methods>
-      </class> <!-- com.training.assignment2.tests.RTTC_040 -->
+      </class> <!-- com.training.assignment3.tests.RTTC072 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
